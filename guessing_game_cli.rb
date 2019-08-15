@@ -3,7 +3,11 @@ def run_guessing_game
   num = rand(6) + 1
   puts "Guess a number 1 to 6"
   input = gets.chomp
-  if input == "exit"
+  case input
+  when "exit"
     puts "Goodbye!"
+  when input == num
+    
+  
   end
 end
